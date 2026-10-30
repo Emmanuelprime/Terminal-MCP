@@ -1,0 +1,20 @@
+[project]
+name = "agent-terminal"
+version = "0.1.0"
+description = "AAn MCP which adds terminal capabilities to AI agent"
+readme = "README.md"
+authors = [
+    { name = "Emmanuelprime", email = "emmanuelprime2@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=4.1.4",
+]
+
+[build-system]
+requires = ["setuptools>=42","wheel"]
+build-backend = "setuptools.build_meta"
+where = ["src"]
+
+[project.scripts]
+agent_terminal = "agent_terminal.main:main"
